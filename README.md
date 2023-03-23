@@ -18,9 +18,12 @@ Prenez soin d'optimiser certains hyperparamètres (des layers du modèle, de la 
 Une deuxième en utilisant le transfer learning, c’est-à-dire en utilisant un réseau déjà entraîné, et en le modifiant 
 pour répondre à votre problème.
 
+Pour lancer l'application, il est nécessaire de créer un nouvel environnement virtuel et d'installer l'ensemble des librairies
+requises pour le projet à l'aide de la commande :
+```pip install -r requrements.txt```
 
-Concernant le transfer learning, votre ami vous précise que :
+Après avoir activé votre nouvel environnement virtuel, changez de répertoire vers celui de l'application 
+(dossier 'Application_streamlit')
 
-Une première chose obligatoire est de réentraîner les dernières couches pour prédire les classes qui vous intéressent seulement.
-Il est également possible d’adapter la structure (supprimer certaines couches, par exemple) ou de réentraîner le modèle 
-avec un très faible learning rate pour ajuster les poids à votre problème (plus long) et optimiser les performances.
+Depuis la ligne de commande, exécuter la commande suivante pour lancer l'application dans votre navigateur par défaut :
+```streamlit run main.py```
